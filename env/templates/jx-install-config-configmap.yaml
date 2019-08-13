@@ -1,0 +1,35 @@
+apiVersion: v1
+data:
+  ca.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIDDDCCAfSgAwIBAgIRAMUvU7g2sVEtLZvaOAIgtqMwDQYJKoZIhvcNAQELBQAw
+    LzEtMCsGA1UEAxMkNGIwMDEzNTAtNTMwZS00NmUxLTg1MTYtYzgzYjFlY2NmN2Mz
+    MB4XDTE5MDgxMzA3MzIwMFoXDTI0MDgxMTA4MzIwMFowLzEtMCsGA1UEAxMkNGIw
+    MDEzNTAtNTMwZS00NmUxLTg1MTYtYzgzYjFlY2NmN2MzMIIBIjANBgkqhkiG9w0B
+    AQEFAAOCAQ8AMIIBCgKCAQEAvMKWTvmSbChjmw9Ba9ctH5sVRbQ2wmSTSG+hc9wf
+    zsjmPEh4BiBtSxuPnMP1v4SYkbZg8vjEvQ/PrrLrW3ECof1PyJ0d17/8iQmoCYwH
+    RcfxlA1LtQiHkIZAYznYgttC9CFZzFfEhF9fQd+V1HLpiX9KzfaldkbjgagrxhuZ
+    dyD5o9GMNC77ENxhyognnoiNgFV07Nrjklx6JQP/aRrvMuTjWhinJC3pDW0cgFQv
+    0sn8zSOx13sKGwMJYSCrn7OsrI1XSO1nO9TpGf1jepXi3A+l3akT/2hPIKGcJzzr
+    kTqWU8J4d0Cih1PZ2G5QWp8kYpc/Sh6oRtsLU+aaZv+1EwIDAQABoyMwITAOBgNV
+    HQ8BAf8EBAMCAgQwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEA
+    jyO7Pm3R7QChguOg6urZNjjYW2Fv9AN31dq3gw8JnNMQGnuLegZySmAND+YYFlKy
+    nR0rKJqdQ+N9rEEZxoIVgw83TbRH368Y3TJTgv+KSmiwS6A2d9gY9qeUvcj274m8
+    FMlS+DNrK07IAcj/BHIo5uYFsO6lSRQ/KL0R0GLrBNnAWOgPsPsF/L6IKbNm0gVF
+    L51DJKcN+364yRSM4dAVJm0UwtzNFyoobsebc408Qq88qVdl9Muu+lYDfQW71pen
+    hkmlVLwrPnsuSuTZqFedJYKE3DI+WtoMjariIxKL1cWSjjYABeCQBikkasbOivnx
+    Pnn6jziKa4wBvFre8FduEA==
+    -----END CERTIFICATE-----
+  clusterName: bitefree
+  jx-install-version: 2.0.588
+  kubeProvider: gke
+  projectID: oocl-jenkins-x-poc
+  region: ""
+  secretsLocation: vault
+  server: https://35.201.168.254
+  systemVaultName: jx-vault-bitefree
+  zone: asia-east1-a
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: jx-install-config
